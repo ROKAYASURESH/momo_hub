@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+    <style>
+        /* _____________CONTACT FORM ______________________ */
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.brand {
+  text-align: center;
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+}
+
+.brand span {
+  color: #ffffff;
+}
+
+.rapper {
+  box-shadow: 0 0 20px 0 rgba(57, 82, 163, 0.7);
+}
+
+
+
+/* ------------------- */
+/* COMPANY INFORMATION */
+/* ------------------- */
+
+.company-info {
+  background:#eeba9b;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.company-info h3,
+.company-info ul {
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+
+/* ------- */
+/* CONTACT */
+/* ------- */
+
+.contact {
+  background:#f5a170;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+/* ---- */
+/* FORM */
+/* ---- */
+
+.contact form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.contact form label {
+  display: block;
+}
+
+.contact form p {
+  margin: 0;
+}
+
+.contact form .full {
+  grid-column: 1 / 3;
+}
+
+.contact form button,
+.contact form input,
+.contact form textarea {
+  width: 100%;
+  padding: 1em;
+  border: solid 1px #627EDC;
+  border-radius: 4px;
+}
+
+.contact form textarea {
+  resize: none;
+}
+
+.contact form button {
+  background: #13e44b;
+  border: 0;
+  color: #e4e4e4;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.contact form button:hover,
+.contact form button:focus {
+  background:#D95103;
+  color: #ffffff;
+  outline: 0;
+  transition: background-color 2s ease-out;
+}
+input[type]{
+  width: 100%;
+  height: 20px;
+}
+/* ------------- */
+/* MEDIA QUERIES */
+/* ------------- */
+
+@media only screen and (min-width: 700px) {
+  .rapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .rapper > * {
+    padding: 2em;
+  }
+
+  .company-info {
+    border-radius: 4px 0 0 4px;
+  }
+
+  .contact {
+    border-radius: 0 4px 4px 0;
+  }
+
+  .company-info h3,
+  .company-info ul,
+  .brand {
+    text-align: left;
+  }
+}
+/* contact Form end__________________ */
+
+
+    </style>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="assests/css/style.css">
+    <link rel="stylesheet" href="assests/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<link rel="stylesheet" href="assests/css/main.css">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">>
+
+<body>
+  <header class="mb-5 ">
+    <nav class="navbar navbar-expand-lg mb-5 ">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="assests/images/momolog.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="menu.html">Our Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="service.html">Our Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="advice.html">Allergy Advice</a>
+            </li>
+
+
+          </ul>
+          <div class="nav_icon ms-auto">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-square-x-twitter"></i>
+            <i class="fa-brands fa-square-instagram" style="margin-right: 20px;"></i>
+            <a href="contact.html"><button>Contact</button></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+    <!-- _____________________First Part_____________________ -->
+    <section>
+        <div class="container py-5">
+            <div class="row">
+                <div class="contact_intro">
+                    <h1>Our Contact</h1>
+                    <h3>GET IN TOUCH</h3>
+                    <h2><span style="color: #d95103;">Our Friendly Team</span> would love to hear from you</h2>
+                </div>
+                <div class="contact_detail">
+                    <div class="location">
+                        <h2><i class="ri-map-pin-fill"></i></i>LOCATION</h2>
+                        <p>Koteshwor -332094 <br>
+                            Kathmandu Bagmati Neoal</p>
+                    </div>
+                    <div class="phone">
+                        <h2><i class="fa fa-phone" aria-hidden="true"></i> PHONE</h2>
+                        <p><span>Mobile: </span>98289823832</p>
+                        <p><span>Tel: </span>98289823832</p>
+                    </div>
+                    <div class="service_time">
+                        <h2><i class="ri-calendar-schedule-fill"></i>SERVICE</h2>
+                        <p><span>MON-FRI</span> 8am - 8am</p>
+                        <p><span>SAT-SUN</span> close</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  -->
+    <section>
+        <div class="container">
+            <div class="rapper">
+                <div class="company-info">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3533.4810592043877!2d85.34317037546609!3d27.671522976203146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb190536c1caa7%3A0xf92fcf603dac3960!2sSipalaya%20Info%20Tech%20Pvt.%20Ltd.!5e0!3m2!1sen!2snp!4v1717499386871!5m2!1sen!2snp" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                
+                </div>
+                <div class="contact">
+                    <h3>E-mail Us</h3>
+
+                    <form id="contact-form">
+
+                        <p>
+                            <label>First Name</label>
+                            <input type="text" name="" id="name" required>
+                        </p>
+
+                        <p>
+                            <label>Last Name</label>
+                            <input type="text" name="" id="company">
+                        </p>
+
+                        <p class="full">
+                            <label>What can we do for you</label>
+                            <input type="text" name="" id="phone">
+                        </p>
+                        <p class="full">
+                            <label>Email</label>
+                            <input type="text" name="" id="phone">
+                        </p>
+                        <p class="full">
+                            <label>Message</label>
+                            <textarea name="message" rows="5" id="message"></textarea>
+                        </p>
+
+                        <p class="full">
+                            <button type="submit">Submit</button>
+                        </p>
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- _____________Footer_______ -->
+
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="row mx-5 d-flex justify-content-center ">
+                <div class="col-12 col-md-5 footer_content">
+                    <img src="assests/images/momolog.png" alt="Logo">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi placeat expedita quidem, aliquid
+                        blanditiis
+                        consequuntur iusto similique veritatis illo suscipit voluptatem repudiandae sed. Ipsa laboriosam
+                        nesciunt
+                        laudantium eius reiciendis earum?</p>
+                </div>
+                <div class="col-6 col-md-2">
+                    <h2>Momos</h2>
+                    <a href="#">About Us</a>
+                    <a href="#">Our Menu</a>
+                    <a href="#">Our Services</a>
+                    <a href="#">Contact Us</a>
+                </div>
+                <div class="col-6 col-md-2">
+                    <h2>Legals</h2>
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Support</a>
+                </div>
+                <div class="col-12 col-md-3 float-end ">
+                    <h2>Follow Us</h2>
+                    <div class="mix">
+                        <div class="social-icons d-flex my-3">
+                            <i class="fab fa-facebook"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-instagram" style="margin-right: 20px;"></i>
+                        </div>
+                    </div>
+                    <div class="social-icons d-flex">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram" style="margin-right: 20px;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assests/js/script.js">
+
+</body>
+
+
+</html>

@@ -1,0 +1,79 @@
+@media screen and (max-width: 767px) {
+    html{
+        font-size: 80%;
+    }
+    .Banner_typography{
+        margin-top: 20px;
+    }
+    .banner_wrapper{
+        width: calc(100% - 60px);
+        margin: 30px;
+    }
+    
+    .all_image img, .all_midd img{
+        width: 100%;
+        height: 100%;
+    }
+    .momo_making .momo_making_content h2 {
+        font-size: 2rem;
+    }
+    .momo_making .momo_making_content{
+    margin: 0 20px;
+    }
+    
+    
+
+    .reverse{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+     .home{
+        position: relative;
+    }
+    .home::before{
+        position: absolute;
+        top: 0;
+        right: -70px;
+      
+        width: 70%;
+
+    }
+    .contact_detail{
+        display: flex;
+        flex-direction: column;
+    }
+    .contact_detail .location, .contact_detail .phone, .contact_detail .service_time{
+       display: flex;
+       flex-direction: column;
+    }
+    .reverssect {
+      order: 1;
+      }
+      .rounds img {
+        width: 100rem;
+        padding: 0 100px;
+        height: 34rem;
+      }
+      
+}
+
+@media screen and (max-width: 467px){
+    .banner_wrapper{
+        width: calc(100% - 10px);
+        margin: 3px;
+    }
+    .contact_detail .location, .contact_detail .phone, .contact_detail .service_time{
+        padding: 10px 6px;
+    }
+    .menu_list{
+        flex-direction: column;
+    }
+    .menu_item_one{
+    
+        width: calc(100% - 20px)!important;
+        margin: 0 10px;
+       
+      }
+
+}
+
